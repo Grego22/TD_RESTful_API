@@ -11,6 +11,8 @@ Shoulda::Matchers.configure do |config|
 end
 
 # [...]
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+
 RSpec.configuration do |config|
   # [...]
   # add `FactoryGirl` methods
