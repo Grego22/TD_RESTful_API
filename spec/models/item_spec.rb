@@ -10,3 +10,4 @@ RSpec.describe Item, type: :model do
   # ensure column name is present before saving
   it { should validate_presence_of(:name) }
 end
+
